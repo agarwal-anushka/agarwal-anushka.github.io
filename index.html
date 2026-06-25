@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anushka Agarwal — Software Engineer</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Lenis Smooth Scroll CSS -->
+    <style>
+        html.lenis { height: auto; }
+        .lenis.lenis-smooth { scroll-behavior: auto; }
+        .lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+        .lenis.lenis-stopped { overflow: hidden; }
+        .lenis.lenis-scrolling iframe { pointer-events: none; }
+    </style>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="custom-cursor"></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="counter">0%</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-brand">AA</div>
+        <div class="nav-links">
+            <a href="mailto:anushkaagarwal812@gmail.com" class="magnetic-btn" data-strength="20">Connect</a>
+        </div>
+    </nav>
+
+    <main class="smooth-scroll">
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-wrapper">
+                <h1 class="hero-title line-1">ANUSHKA</h1>
+                <h1 class="hero-title line-2">AGARWAL</h1>
+                <div class="hero-info">
+                    <p class="fade-in-text">Software Engineer &bull; Backend Developer</p>
+                    <p class="fade-in-text">Scroll to explore <span class="arrow">↓</span></p>
+                </div>
+            </div>
+            
+            <div class="hero-image-container">
+                <img src="hero.png" alt="Sleek mechanical keyboard" class="parallax-img">
+            </div>
+        </section>
+
+        <!-- About Text (Massive Typography) -->
+        <section class="about-massive">
+            <div class="container">
+                <h2 class="split-text">
+                    I DON'T JUST WRITE CODE. I ARCHITECT DIGITAL EXPERIENCES THAT BRIDGE THE GAP BETWEEN COMPLEX SYSTEMS AND INTUITIVE DESIGN.
+                </h2>
+                
+                <h3 class="tech-heading split-text">TECHNICAL SKILLS</h3>
+                <div class="tech-stack-container">
+                    <div class="tech-stack-marquee">
+                        <span>C++</span>
+                        <span>PYTHON</span>
+                        <span>GO</span>
+                        <span>FASTAPI</span>
+                        <span>REACT</span>
+                        <span>POSTGRESQL</span>
+                        <span>REDIS</span>
+                        <span>DOCKER</span>
+                        <span>C++</span>
+                        <span>PYTHON</span>
+                        <span>GO</span>
+                        <span>FASTAPI</span>
+                        <span>REACT</span>
+                        <span>POSTGRESQL</span>
+                        <span>REDIS</span>
+                        <span>DOCKER</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Horizontal Scroll Projects -->
+        <section class="projects-horizontal" id="projects-wrapper">
+            <div class="projects-container">
+                <div class="project-header-panel">
+                    <h2 class="section-heading">SELECTED<br>WORKS</h2>
+                    <p>(Scroll Right)</p>
+                </div>
+                
+                <!-- Project 1 -->
+                <div class="project-panel">
+                    <div class="project-details project-backend-details">
+                        <div class="project-meta">Go &bull; PostgreSQL &bull; Redis &bull; etcd &bull; Docker</div>
+                        <h3>Distributed Job Scheduler</h3>
+                        <ul class="project-bullets">
+                            <li>Architected a distributed job scheduler with etcd-based leader election across Go instances, achieving sub-5-second automatic failover.</li>
+                            <li>Built and load tested a sharded Redis job queue with retry and dead-letter handling, sustaining 1,700 jobs/min at full throughput.</li>
+                            <li>Diagnosed a split-brain race condition from a frozen leader; fixed via session-aware failover checks and added panic-recovery.</li>
+                        </ul>
+                        <a href="https://github.com/agarwal-anushka/distributed-job-scheduler" class="magnetic-btn outline-btn" data-strength="30">View Source</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-panel">
+                    <div class="project-details project-backend-details">
+                        <div class="project-meta">Python &bull; FastAPI &bull; PostgreSQL &bull; Redis &bull; Docker</div>
+                        <h3>LLM Code Review Service</h3>
+                        <ul class="project-bullets">
+                            <li>Designed an async code review pipeline decoupling HTTP submission from LLM processing, ensuring sub-10ms submission responses.</li>
+                            <li>Implemented content-addressed caching with SHA-256 and Redis, reducing repeated review latency by 50x (796ms → 16ms).</li>
+                            <li>Built resilient LLM integration with automatic Groq → Gemini failover and exponential backoff, with stuck job recovery via watchdog.</li>
+                        </ul>
+                        <a href="https://github.com/agarwal-anushka/llm-code-review-service" class="magnetic-btn outline-btn" data-strength="30">View Source</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Education List -->
+        <section class="experience-list pb-half">
+            <div class="container">
+                <h2 class="section-heading-small">EDUCATION</h2>
+                <div class="exp-row border-top">
+                    <div class="exp-year">2024 - 2028</div>
+                    <div class="exp-role">
+                        <h3>B.Tech, Computer Science and Engineering</h3>
+                        <p>Institute of Technology &amp; Management (Affiliated to RGPV) &bull; CGPA: 7.21</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience List -->
+        <section class="experience-list pt-half">
+            <div class="container">
+                <h2 class="section-heading-small">EXPERIENCE</h2>
+                <div class="exp-row border-top">
+                    <div class="exp-year">Sep 2025 - Present</div>
+                    <div class="exp-role">
+                        <h3>Student Placement Coordinator</h3>
+                        <p>Training &amp; Placement Cell, ITM Gwalior</p>
+                    </div>
+                </div>
+                <div class="exp-row border-top">
+                    <div class="exp-year">Dec 2024 - Present</div>
+                    <div class="exp-role">
+                        <h3>Tech Team Member</h3>
+                        <p>Google Developer Student Clubs (GDGC), ITM Gwalior</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Contact -->
+        <footer class="footer-massive">
+            <div class="footer-cta">
+                <h2>GOT A VISION?</h2>
+                <a href="mailto:anushkaagarwal812@gmail.com" class="massive-link magnetic-btn" data-strength="50">LET'S BUILD IT</a>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Anushka Agarwal</p>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/anushka-agarwal-792a85327/" target="_blank" class="magnetic-btn" data-strength="15">LinkedIn</a>
+                    <a href="https://github.com/agarwal-anushka" target="_blank" class="magnetic-btn" data-strength="15">GitHub</a>
+                    <a href="https://leetcode.com/u/anushka_8/" target="_blank" class="magnetic-btn" data-strength="15">Leetcode</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Scripts -->
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+    
+    <!-- SplitType for Text Animation -->
+    <script src="https://unpkg.com/split-type"></script>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
