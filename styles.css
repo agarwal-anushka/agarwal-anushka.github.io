@@ -266,7 +266,7 @@ a {
 
 .projects-container {
     display: flex;
-    width: 300vw; /* 1 panel for header + 2 projects */
+    width: 400vw; /* 1 panel for header + 3 projects */
     height: 100vh;
 }
 
